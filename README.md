@@ -17,13 +17,10 @@ Make a build directory:
 
 To initialize your local repository using the AOSP manifest, use commands like these:
 
-    repo init -u https://android.googlesource.com/platform/manifest -b android-4.4_r1
+    repo init -u https://android.googlesource.com/a/platform/manifest -b android-4.4.2_r1
 
-    curl -L -o .repo/local_manifests/aosp.xml -O -L https://raw.github.com/razrqcom-dev-team/android_local_razrqcom/aosp-kk/aosp.xml
+    curl -L -o .repo/local_manifests/aosp.xml -O -L https://raw.github.com/tucstwo/android_local_razrqcom/aosp-kk/aosp.xml
  
-    	( or Download: https://github.com/razrqcom-dev-team/android_local_razrqcom/blob/aosp-kk/aosp.xml
-		and place it in ~/Android/.repo/local_manifest.xml (or ~/'name you chose'/.repo)
-
 Then to sync up:
 
     repo sync
